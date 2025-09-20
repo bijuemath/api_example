@@ -16,5 +16,10 @@ def subtract(a, b):
     # result = a-b
     return float(a) - float(b)  
 
+@app.get("/multiply")
+def multiply(a, b):
+    
+    return float(a) * float(b)  
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=9321)
